@@ -7,8 +7,8 @@
             int Num2 = Convert.ToInt32(num2);
             int Num3 = Convert.ToInt32(num3);
 
-            int Step1 = Num1 + Num2 + Num3;
-            int Step2 = Step1 / 3;
+            int Step2 = Num4 + Num5 + Num6;
+            int Step4 = Step2 / 4;
 
             Console.WriteLine(Step2);
         }
