@@ -1,0 +1,74 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {;
+        
+        string input = Console.ReadLine();
+        
+        getFood(input);
+
+
+    }
+    
+    private static void getFood(string input) {
+        List<Food> foodList = new List<Food>();
+        
+        foodList.Add(new Food(1, "Big Mac", 13.99));
+        foodList.Add(new Food(2, "Chicken Nugget", 11.99));
+        foodList.Add(new Food(3, "McChicken", 5.99));
+        foodList.Add(new Food(4, "Fries", 7.99));
+        
+        
+        string[] inputs = input.Split(" ");
+        double totalPrice = 0;
+        
+        foreach (var x in inputs) {
+            int converted = Convert.ToInt32(x);
+            
+            foreach (var y in foodList) {
+                if (converted == y.Id) {
+                    Console.WriteLine("{0}-----{1}-----{2}", y.Id, y.Name, y.Price);
+                    totalPrice += y.Price;
+                }
+            }
+   
+        }
+        
+        Console.WriteLine("Total----------{0}", totalPrice);
+    }
+}
+
+public class Food {
+    int id;
+    string name;
+    double price;
+    
+    public Food(int id, string name, double price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+    }
+    
+    public int Id
+    {
+        get { return id;  }
+        set { id = value; }
+    }
+  
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+    public double Price
+    {
+        get { return price; }
+        set { price = value; }
+    }
+}

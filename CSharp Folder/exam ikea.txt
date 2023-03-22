@@ -1,0 +1,201 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+using System.Collections.Generic; 
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        List<Item> items = new List<Item>();
+        welcomeMsg();
+        string provinceSelected = provinceSelection();
+        string deliverySelected = deliveryOption();
+       
+        double orderPrice = selectingOrders(items);
+        getTotalPrice(orderPrice, provinceSelected, deliverySelected, items);
+        
+        
+        
+         
+    }
+    
+    private static string provinceSelection() {
+         Console.WriteLine("Please select below which province are you from..");
+        Console.WriteLine("1.Ontario 2.Quebec 3.Alberta..");
+        string province = Console.ReadLine();
+        
+        if (province == "1") {
+            Console.WriteLine("You selected Ontario...");
+        } else if (province == "2") {
+            Console.WriteLine("You selected Quebec...");
+        } else if (province == "3") {
+            Console.WriteLine("You selected Alberta...");
+        } 
+        
+        Console.WriteLine("________________");
+        return province;
+    }
+    
+    private static string deliveryOption() {
+        Console.WriteLine("Please select your delivery option...");
+        Console.WriteLine("1.Delivery 2.Pick-up");
+        
+        string delivery = Console.ReadLine();
+        
+        string result = ( delivery == "1" ? "You selected delivery..." : "You selected pick-up...");
+        
+        Console.WriteLine(result);
+        
+        Console.WriteLine("________________");
+        return delivery;
+    }
+    
+    private static void welcomeMsg() {
+        Console.WriteLine("Hi, Welcome to IKEA Canada ( Ontario, Quebec, Alberta )");
+    }
+    
+    private static double selectingOrders(List<Item> items) {
+        Item tableTop = new Item("Table Top", 14.95, 0);
+        Item chair = new Item("Gaming Chair", 35, 0);
+        Item mattress = new Item("King Size Mattress", 499.55, 0);
+        Item drawer = new Item("6 Drawer", 345.20, 0);
+        Item basket = new Item("Basket", 5.95, 0);
+        
+        var itemDic = new Dictionary<string, Item> {
+            { "1", tableTop },
+            { "2", chair },
+            { "3", mattress },
+            { "4", drawer },
+            { "5", basket },
+        };
+        
+        Console.WriteLine("Select an item from the list below : ");
+
+        foreach (KeyValuePair<string, Item> entry in itemDic) {
+            Console.WriteLine("{0}. {1} == {2} ", entry.Key, entry.Value.ItemName, entry.Value.Cost);
+        }
+        
+
+        bool isDoneOrdering = false;
+        double totalPrice = 0;
+        while (!isDoneOrdering) {
+            string orderSelect = Console.ReadLine();
+            
+            string orderItem = itemDic[orderSelect].ItemName + " == $" + itemDic[orderSelect].Cost;
+            items.Add(itemDic[orderSelect]);
+            Console.WriteLine("You order " + orderItem);
+            Console.WriteLine("________________");
+            
+            totalPrice += itemDic[orderSelect].Cost;
+            
+            isDoneOrdering = isDone();
+            
+            if (!isDoneOrdering) {
+                Console.WriteLine("What do you want to add?...");
+            } else {
+ 
+                Console.WriteLine("Your order total is " + totalPrice);
+            }
+        }
+        
+        return totalPrice;
+        
+    }
+    
+    private static void displayMenu(Dictionary<string, string> menu) {
+   
+        Console.WriteLine("....");
+        Console.WriteLine("....");
+        Console.WriteLine("Here is the Menu..");
+        
+ 
+        foreach (KeyValuePair<string, string> entry in menu) {
+            Console.WriteLine("{0}. {1}", entry.Key, entry.Value);
+        }
+        
+        Console.WriteLine("....");
+        Console.WriteLine("________________");
+    }
+    
+    private static bool isDone() {
+        Console.WriteLine("Do you want to order something else? [Y/N]");
+        string ans = Console.ReadLine();
+ 
+        
+        if (ans.ToUpper() == "Y") {
+            return false;
+        } else if (ans.ToUpper() == "N") {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    private static void getTotalPrice(double orderPrice, string provinceSelected, string deliverySelected, List<Item> items) {
+        double tax = 0;
+        
+        //SERVICE FEE
+        double serviceFee = (orderPrice < 20?  2.00 : 3.00);
+
+        // PROVINCIAL TAX
+        if (provinceSelected == "1") {
+            tax = orderPrice * 0.18;
+        } else if (provinceSelected == "2") {
+             tax = orderPrice * 0.15;
+        } else if (provinceSelected == "3") {
+             tax = orderPrice * 0.05;
+        }
+        
+        // DELIVERY FEE
+        double deliveryFee = ( deliverySelected == "1"? 1.99 : 0);
+        
+        double total = orderPrice + serviceFee + tax + deliveryFee;
+        
+        
+        Console.WriteLine("________________");
+        Console.WriteLine("________________");
+        Console.WriteLine("Printing your receipt...");
+        Console.WriteLine("Here is your receipt....");
+        Console.WriteLine("---------------------");
+        Console.WriteLine("------ Order -------");
+        Console.WriteLine("---------------------");
+        
+        foreach(var x in items) {
+          Console.WriteLine("{0} == ${1}", x.ItemName, x.Cost);
+        }
+        Console.WriteLine("---------------------");
+        Console.WriteLine("---- Total Cost -----");
+        Console.WriteLine("---------------------");
+        Console.WriteLine("Order Price _____ $" + orderPrice);
+        Console.WriteLine("Service Fee _____ $" + serviceFee);
+        Console.WriteLine("Delivery Fee_____ $" + deliveryFee);
+        Console.WriteLine("GST/PST__________ $" + tax);
+        Console.WriteLine("Total____________ $" + total);
+        
+        
+        
+
+    }
+    
+    private static void printReceipt(double orderPrice, List<string> listOfOrders) {
+        
+        
+    }
+    
+    
+}
+
+public class Item {
+    public string ItemName { get; set; }
+    public double Cost { get; set; }
+    public int Qty { get; set; }
+    
+    public Item (string itemName, double cost, int qty) {
+        ItemName = itemName;
+        Cost = cost;
+        Qty = qty;
+    }
+    
+}

@@ -1,0 +1,42 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter your input : ");
+        string msg = Console.ReadLine();
+        removeDuplicate(msg.ToUpper());
+
+    }
+
+    public static void removeDuplicate(string msg)
+    
+    {
+        var duplicate = new List<char>();
+        var temp = new List<char>();
+        for (int x = 0; x <= msg.Length - 1; x++) {
+            bool isDuplicate = false;
+            // Console.WriteLine("{0} ", msg[x]);
+            for (int y = msg.Length - 1; y >= x + 1; y--) {
+                // Console.WriteLine("==={0} ", msg[y]);
+                if (msg[x] == msg[y]) {
+                    isDuplicate = true;
+                    duplicate.Add(msg[x]);
+                    break;
+                }
+            }
+            // Console.WriteLine(isDuplicate);
+            if (!isDuplicate) {
+                if (!duplicate.Contains(msg[x])) {
+                    temp.Add(msg[x]);
+                }
+            }
+        }
+        Console.WriteLine(string.Join(" ", temp));
+    }
+}

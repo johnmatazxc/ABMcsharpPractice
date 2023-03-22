@@ -1,0 +1,11 @@
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\bin\Debug\LifecycleDemo.exe.config
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\bin\Debug\LifecycleDemo.exe
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\bin\Debug\LifecycleDemo.pdb
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\obj\Debug\LifecycleDemo.csproj.AssemblyReference.cache
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\obj\Debug\LifecycleDemo.csproj.SuggestedBindingRedirects.cache
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\obj\Debug\LifecycleDemo.Form1.resources
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\obj\Debug\LifecycleDemo.Properties.Resources.resources
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\obj\Debug\LifecycleDemo.csproj.GenerateResource.cache
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\obj\Debug\LifecycleDemo.csproj.CoreCompileInputs.cache
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\obj\Debug\LifecycleDemo.exe
+D:\repo\CSharp Folder\LifecycleDemo\LifecycleDemo\obj\Debug\LifecycleDemo.pdb

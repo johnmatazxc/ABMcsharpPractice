@@ -1,0 +1,30 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter your input : ");
+        string msg = Console.ReadLine();
+        Console.WriteLine(Reverse(msg));
+
+    }
+
+    public static String Reverse(string msg)
+    {
+        string[] nameArr = msg.Split(" ");
+        string reverseString = string.Empty;
+
+        for (int x = nameArr.Length - 1; x >= 0; x--) {
+            for (int y = nameArr[x].Length - 1; y >= 0; y--) {
+                reverseString += nameArr[x][y];
+            }
+            reverseString += " ";
+        }
+        
+        return reverseString;
+    }
+}

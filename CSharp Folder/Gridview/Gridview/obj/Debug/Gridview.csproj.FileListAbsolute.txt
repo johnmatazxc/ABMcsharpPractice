@@ -1,0 +1,11 @@
+D:\repo\CSharp Folder\Gridview\Gridview\bin\Debug\Gridview.exe.config
+D:\repo\CSharp Folder\Gridview\Gridview\bin\Debug\Gridview.exe
+D:\repo\CSharp Folder\Gridview\Gridview\bin\Debug\Gridview.pdb
+D:\repo\CSharp Folder\Gridview\Gridview\obj\Debug\Gridview.csproj.AssemblyReference.cache
+D:\repo\CSharp Folder\Gridview\Gridview\obj\Debug\Gridview.csproj.SuggestedBindingRedirects.cache
+D:\repo\CSharp Folder\Gridview\Gridview\obj\Debug\Gridview.Form1.resources
+D:\repo\CSharp Folder\Gridview\Gridview\obj\Debug\Gridview.Properties.Resources.resources
+D:\repo\CSharp Folder\Gridview\Gridview\obj\Debug\Gridview.csproj.GenerateResource.cache
+D:\repo\CSharp Folder\Gridview\Gridview\obj\Debug\Gridview.csproj.CoreCompileInputs.cache
+D:\repo\CSharp Folder\Gridview\Gridview\obj\Debug\Gridview.exe
+D:\repo\CSharp Folder\Gridview\Gridview\obj\Debug\Gridview.pdb

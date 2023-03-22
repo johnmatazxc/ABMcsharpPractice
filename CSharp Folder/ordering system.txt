@@ -1,0 +1,187 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+using System.Collections.Generic; 
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        var listOfOrders = new List<string>();
+        welcomeMsg();
+        string provinceSelected = provinceSelection();
+        string deliverySelected = deliveryOption();
+       
+        double orderPrice = selectingOrders(listOfOrders);
+        getTotalPrice(orderPrice, provinceSelected, deliverySelected, listOfOrders);
+        
+        
+        
+         
+    }
+    
+    private static string provinceSelection() {
+         Console.WriteLine("Please select below which province are you from..");
+        Console.WriteLine("1.Ontario 2.Quebec 3.Alberta..");
+        string province = Console.ReadLine();
+        
+        if (province == "1") {
+            Console.WriteLine("You selected Ontario...");
+        } else if (province == "2") {
+            Console.WriteLine("You selected Quebec...");
+        } else if (province == "3") {
+            Console.WriteLine("You selected Alberta...");
+        } 
+        
+        Console.WriteLine("________________");
+        return province;
+    }
+    
+    private static string deliveryOption() {
+        Console.WriteLine("Please select your delivery option...");
+        Console.WriteLine("1.Delivery 2.Pick-up");
+        
+        string delivery = Console.ReadLine();
+        
+        string result = ( delivery == "1" ? "You selected delivery..." : "You selected pick-up...");
+        
+        Console.WriteLine(result);
+        
+        Console.WriteLine("________________");
+        return delivery;
+    }
+    
+    private static void welcomeMsg() {
+        Console.WriteLine("Hi, Welcome to McDonalds Canada...");
+    }
+    
+    private static double selectingOrders(List<string> list) {
+        
+        var menu = new Dictionary<string, string> {
+            { "1", "Big Mac___13.99" },
+            { "2", "Cheeseburger___11.99" },
+            { "3", "Double Cheeseburger___10.99" },
+            { "4", "Quarter Pounder w/ cheese___16.99" },
+            { "5", "Quarter Pounder w/o cheese___12.99" },
+            { "6", "McCrispy Bacon Deluxe___13.99" },
+            { "7", "McChicken___13.99" },
+            { "8", "10pcs Chicken Nuggets___9.99" },
+            { "9", "Hash Browns___4.99" },
+            { "10", "Egg McMuffin___5.99" },
+            
+        };
+        
+        displayMenu(menu);
+        
+        Console.WriteLine("Please select your order...");
+        double totalPrice = 0;
+        bool isDoneOrdering = false;
+        while (!isDoneOrdering) {
+            string orderSelect = Console.ReadLine();
+            string[] item = menu[orderSelect].Split("___");
+            
+            string orderItem = item[0] + "____________ $" + item[item.Length - 1];
+            list.Add(orderItem);
+            Console.WriteLine("You order " + item[0] + " $" + item[item.Length - 1] + "....");
+            Console.WriteLine("________________");
+            
+            totalPrice += Convert.ToDouble(item[item.Length - 1]);
+            
+            isDoneOrdering = isDone();
+            
+            if (!isDoneOrdering) {
+                Console.WriteLine("What do you want to add?...");
+            } else {
+ 
+                Console.WriteLine("Your order total is " + totalPrice);
+            }
+        }
+        
+        return totalPrice;
+        
+    }
+    
+    private static void displayMenu(Dictionary<string, string> menu) {
+   
+        Console.WriteLine("....");
+        Console.WriteLine("....");
+        Console.WriteLine("Here is the Menu..");
+        
+ 
+        foreach (KeyValuePair<string, string> entry in menu) {
+            Console.WriteLine("{0}. {1}", entry.Key, entry.Value);
+        }
+        
+        Console.WriteLine("....");
+        Console.WriteLine("________________");
+    }
+    
+    private static bool isDone() {
+        Console.WriteLine("Do you want to order something else? [Y/N]");
+        string ans = Console.ReadLine();
+ 
+        
+        if (ans.ToUpper() == "Y") {
+            return false;
+        } else if (ans.ToUpper() == "N") {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    private static void getTotalPrice(double orderPrice, string provinceSelected, string deliverySelected, List<string> listOfOrders) {
+        double tax = 0;
+        
+        //SERVICE FEE
+        double serviceFee = (orderPrice < 20?  2.00 : 3.00);
+
+        // PROVINCIAL TAX
+        if (provinceSelected == "1") {
+            tax = orderPrice * 0.18;
+        } else if (provinceSelected == "2") {
+             tax = orderPrice * 0.15;
+        } else if (provinceSelected == "3") {
+             tax = orderPrice * 0.05;
+        }
+        
+        // DELIVERY FEE
+        double deliveryFee = ( deliverySelected == "1"? 1.99 : 0);
+        
+        double total = orderPrice + serviceFee + tax + deliveryFee;
+        
+        
+        Console.WriteLine("________________");
+        Console.WriteLine("________________");
+        Console.WriteLine("Printing your receipt...");
+        Console.WriteLine("................");
+        Console.WriteLine("Here is your receipt....");
+        Console.WriteLine("---------------------");
+        Console.WriteLine("------ Order -------");
+        Console.WriteLine("---------------------");
+        
+        foreach(string x in listOfOrders) {
+          Console.WriteLine(x);
+        }
+        Console.WriteLine("---------------------");
+        Console.WriteLine("---- Total Cost -----");
+        Console.WriteLine("---------------------");
+        Console.WriteLine("Order Price _____ $" + orderPrice);
+        Console.WriteLine("Service Fee _____ $" + serviceFee);
+        Console.WriteLine("Delivery Fee_____ $" + deliveryFee);
+        Console.WriteLine("GST/PST__________ $" + tax);
+        Console.WriteLine("Total____________ $" + total);
+        
+        
+        
+
+    }
+    
+    private static void printReceipt(double orderPrice, List<string> listOfOrders) {
+        
+        
+    }
+    
+    
+}

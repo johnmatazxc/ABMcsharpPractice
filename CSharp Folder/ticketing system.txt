@@ -1,0 +1,54 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        welcomeMsg();
+        bookFlight();
+    }
+    
+    private static void welcomeMsg() {
+        Console.WriteLine("Welcome to Porter Airlines" + Environment.NewLine);
+
+    }
+    
+    private static void bookFlight() {
+        Console.WriteLine("Please enter your inputs");
+        Console.Write("From: ");
+        string from = Console.ReadLine();
+        Console.Write("To: ");
+        string to = Console.ReadLine();
+    }
+        
+}
+
+public class UserDetails {
+    string name;
+    string gender;
+    int age;
+    string email;
+    string mobileNum;
+    string typeOfFlight; //round-trip or one-way
+    int numOf
+
+}
+
+// public class RTFlightDetails {
+//     string flightId;
+//     string fromAirport;
+//     string toAirport;
+//     DateTime departureDate;
+//     DateTime arrivalDate;
+// }
+
+public class OWFlightDetails {
+    string flightId;
+    string fromAirport;
+    string toAirport;
+    DateTime departureDate;
+    DateTime arrivalDate;
+}

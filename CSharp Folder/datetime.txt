@@ -1,0 +1,63 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        List<People> list = new List<People>();
+        People isra = new People("Israa Rashid", new DateTime(2004, 04, 03));
+        People rakesh = new People("Rakesh", new DateTime(2001, 11, 03));
+        People walid = new People("Walid El Morsi", new DateTime(2000, 06, 11));
+        People kelsey = new People("Kelsey Kennedy", new DateTime(1993, 04, 03));
+        People mj = new People("Mj Pineda", new DateTime(1993, 10, 28));
+        People lester = new People("Lester Evangelista", new DateTime(1997, 01, 13));
+        People dymtro = new People("Dymtro", new DateTime(1985, 12, 22));
+        
+        list.Add(isra);
+        list.Add(rakesh);
+        list.Add(walid);
+        list.Add(kelsey);
+        list.Add(mj);
+        list.Add(lester);
+        list.Add(dymtro);
+        
+        foreach(var x in list) {
+            Console.WriteLine(x.Name + " : " + x.Dob.Year);
+        }
+        
+        Console.WriteLine(Environment.NewLine + "List of people who is dob is year 2000 above :");
+        
+        DateTime dateToCompare = new DateTime(2000, 01, 01);
+        
+        List<People> filtered = list.FindAll(x => DateTime.Compare(x.Dob, dateToCompare) >= 0);
+        
+        foreach(var x in filtered) {
+            Console.WriteLine(x.Name + " : " + x.Dob.Year);
+        }
+    }
+}
+
+public class People {
+    private string name;
+    private DateTime dob;
+    
+    public People(string name, DateTime dob) {
+        this.name = name;
+        this.dob = dob;
+    }
+    
+    public string Name {
+        get { return name; }   // get method
+        set { name = value; }  // set method
+    }
+    
+    public DateTime Dob {
+        get { return dob; }   // get method
+        set { dob = value; }  // set method
+    }
+    
+}

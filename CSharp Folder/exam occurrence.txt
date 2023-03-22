@@ -1,0 +1,30 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+  public static void Main(string[] args)
+  {
+    Console.Write("Enter your input : ");
+    string msg = Console.ReadLine();
+    countOccurrence(msg.ToUpper());
+
+  }
+
+  public static void countOccurrence(string msg)
+  {
+    while (msg.Length > 0) {
+      Console.Write(msg[0] + " : ");
+      int count = 0;
+      for (int j = 0; j < msg.Length; j++) {
+        if (msg[0] == msg[j]) {
+          count++;
+        }
+      }
+      Console.WriteLine(count);
+      msg = msg.Replace(msg[0].ToString(), string.Empty);
+    }
+  }
+}

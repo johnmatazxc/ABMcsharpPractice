@@ -1,0 +1,86 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        string msg = string.Join(" ", array);
+        Console.WriteLine("Enter a value that you want to search from [ {0} ] ? ", msg);
+        
+        
+        int value = Int32.Parse(Console.ReadLine());
+        // int value2 = 6;
+ 
+        findingElem(array, value);
+        // Console.WriteLine("_________________");
+        // findingElem(array, value2);
+ 
+
+    }
+    
+    private static void findingElem(int[] array, int key) {
+        Array.Sort(array);
+        int arrayLength = array.Length;
+        int mid = arrayLength / 2;
+        
+        List<int> storedNum = new List<int>();
+   
+        // if (arrayLength % 2 == 0) {
+            Console.WriteLine("Mid is " + array[mid]);
+    
+            if (key == array[mid]) {
+                Console.WriteLine(key + " == " + array[mid]);
+                Console.WriteLine("Element {0} found on the middle ", key);
+            } else if (key < array[mid]) {
+                Console.WriteLine(key +  " < " + array[mid]);
+                
+                if (key == array[mid - 1]) {
+                    Console.WriteLine("{0} is found on mid - 1", key);
+                } else {
+                    do {
+                     mid--;
+                     storedNum.Add(array[mid]); 
+                     
+                     if (mid == 0) {
+                         break;
+                     }
+                    } while (array[mid] >= 0);
+                    
+                    var newArrayVal = String.Join(", ", storedNum);
+                    int[] newArray = storedNum.ToArray();
+                    Array.Sort(newArray);
+                    Console.WriteLine("Searching again between " + newArrayVal);
+                    findingElem(newArray, key);
+                }
+                
+                
+            } else {
+                Console.WriteLine(key + " > " + array[mid]);
+                
+                if (key == array[mid + 1]) {
+                    Console.WriteLine("{0} is found on mid + 1", key);
+                    
+                } else {
+                    do {
+                     mid++;
+                     storedNum.Add(array[mid]); 
+                     
+                     if (mid >= arrayLength - 1) {
+                         break;
+                     }
+                    } while (array[mid] <= arrayLength);
+                    
+                    var newArrayVal = String.Join(", ", storedNum);
+                int[] newArray = storedNum.ToArray();
+                Console.WriteLine("Searching again between " + newArrayVal);
+                findingElem(newArray, key);
+                }
+            }
+    }
+}

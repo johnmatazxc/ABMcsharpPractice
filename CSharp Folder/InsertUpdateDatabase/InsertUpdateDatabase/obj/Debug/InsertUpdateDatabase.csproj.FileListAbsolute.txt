@@ -1,0 +1,11 @@
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\bin\Debug\InsertUpdateDatabase.exe.config
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\bin\Debug\InsertUpdateDatabase.exe
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\bin\Debug\InsertUpdateDatabase.pdb
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\obj\Debug\InsertUpdateDatabase.csproj.AssemblyReference.cache
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\obj\Debug\InsertUpdateDatabase.csproj.SuggestedBindingRedirects.cache
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\obj\Debug\InsertUpdateDatabase.Form1.resources
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\obj\Debug\InsertUpdateDatabase.Properties.Resources.resources
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\obj\Debug\InsertUpdateDatabase.csproj.GenerateResource.cache
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\obj\Debug\InsertUpdateDatabase.csproj.CoreCompileInputs.cache
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\obj\Debug\InsertUpdateDatabase.exe
+D:\repo\CSharp Folder\InsertUpdateDatabase\InsertUpdateDatabase\obj\Debug\InsertUpdateDatabase.pdb

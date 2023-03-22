@@ -1,0 +1,28 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+  public static void Main(string[] args)
+  {
+    Console.Write("Enter your input : ");
+    string msg = Console.ReadLine();
+    bool isPalidrome = getStatus(msg);
+    Console.WriteLine(isPalidrome ? msg + " is a palindrome" : msg + " is not a palindrome");
+
+  }
+
+  public static bool getStatus(string msg)
+  {
+    String reverse = "";
+    char[] ch = msg.ToCharArray();
+    Array.Reverse(ch);
+   
+    reverse = new string(ch);
+    bool b = msg.Equals(reverse, StringComparison.OrdinalIgnoreCase);
+   
+    return b;
+  }
+}
