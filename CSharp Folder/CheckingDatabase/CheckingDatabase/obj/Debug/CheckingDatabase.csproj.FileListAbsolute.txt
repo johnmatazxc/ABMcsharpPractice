@@ -1,0 +1,11 @@
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\bin\Debug\CheckingDatabase.exe.config
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\bin\Debug\CheckingDatabase.exe
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\bin\Debug\CheckingDatabase.pdb
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\obj\Debug\CheckingDatabase.csproj.AssemblyReference.cache
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\obj\Debug\CheckingDatabase.csproj.SuggestedBindingRedirects.cache
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\obj\Debug\CheckingDatabase.Form1.resources
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\obj\Debug\CheckingDatabase.Properties.Resources.resources
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\obj\Debug\CheckingDatabase.csproj.GenerateResource.cache
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\obj\Debug\CheckingDatabase.csproj.CoreCompileInputs.cache
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\obj\Debug\CheckingDatabase.exe
+D:\repo\CSharp Folder\CheckingDatabase\CheckingDatabase\obj\Debug\CheckingDatabase.pdb

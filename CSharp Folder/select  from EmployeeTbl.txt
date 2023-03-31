@@ -1,0 +1,31 @@
+select * from EmployeeTbl
+select * from UserTbl
+
+CREATE PROCEDURE usp_selectAllEmployeeTbl
+AS
+SELECT * FROM EmployeeTbl
+GO
+
+insert into EmployeeTbl (employeeName, age, gender, salary, position, teamLead) values('test1', 24, 'M', 102202, null, null)
+
+CREATE PROCEDURE usp_insertIntoEmployeeTbl @employeeName nvarchar(50), @age int, @gender char(10), @salary float, @position nvarchar(50), @teamLead nvarchar(50)
+AS
+INSERT INTO EmployeeTbl (employeeName, age, gender, salary, position, teamLead) 
+VALUES (@employeeName, @age, @gender, @salary, @position, @teamLead)
+GO
+
+select * from UserTbl where username = 'john'
+
+
+
+insert into UserTbl(username,password,isActive) 
+       select 'john2', 'john', 1
+       where not exists (Select username From UserTbl where username = 'john2')
+
+
+select count(*) as Result from UserTbl where username = 'john2'
+
+CREATE PROCEDURE usp_checkIfExist @username nvarchar(50)
+AS
+SELECT count(*) AS Result FROM UserTbl WHERE username = @username
+GO

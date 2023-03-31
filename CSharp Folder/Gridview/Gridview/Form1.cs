@@ -42,11 +42,10 @@ namespace Gridview
         {
             try
             {
-                string query = "SELECT * FROM " + table;
 
                 conn.Open();
 
-                cmd = new SqlCommand(query, conn);
+                cmd = new SqlCommand("usp_selectAll", conn);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
 
@@ -80,11 +79,12 @@ namespace Gridview
         {
             try
             {
-                string query = "SELECT * FROM " + table + " WHERE username like '%" + searchVal + "%'";
 
                 conn.Open();
 
-                cmd = new SqlCommand(query, conn);
+                cmd = new SqlCommand("usp_selectAllFrmTable", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@username", SqlDbType.NVarChar).Value = searchVal;
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
 

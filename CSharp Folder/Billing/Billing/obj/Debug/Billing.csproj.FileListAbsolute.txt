@@ -1,0 +1,11 @@
+D:\repo\CSharp Folder\Billing\Billing\bin\Debug\Billing.exe.config
+D:\repo\CSharp Folder\Billing\Billing\bin\Debug\Billing.exe
+D:\repo\CSharp Folder\Billing\Billing\bin\Debug\Billing.pdb
+D:\repo\CSharp Folder\Billing\Billing\obj\Debug\Billing.csproj.AssemblyReference.cache
+D:\repo\CSharp Folder\Billing\Billing\obj\Debug\Billing.csproj.SuggestedBindingRedirects.cache
+D:\repo\CSharp Folder\Billing\Billing\obj\Debug\Billing.Form1.resources
+D:\repo\CSharp Folder\Billing\Billing\obj\Debug\Billing.Properties.Resources.resources
+D:\repo\CSharp Folder\Billing\Billing\obj\Debug\Billing.csproj.GenerateResource.cache
+D:\repo\CSharp Folder\Billing\Billing\obj\Debug\Billing.csproj.CoreCompileInputs.cache
+D:\repo\CSharp Folder\Billing\Billing\obj\Debug\Billing.exe
+D:\repo\CSharp Folder\Billing\Billing\obj\Debug\Billing.pdb

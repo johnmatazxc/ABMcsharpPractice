@@ -1,0 +1,11 @@
+D:\repo\CSharp Folder\Searching\Searching\bin\Debug\Searching.exe.config
+D:\repo\CSharp Folder\Searching\Searching\bin\Debug\Searching.exe
+D:\repo\CSharp Folder\Searching\Searching\bin\Debug\Searching.pdb
+D:\repo\CSharp Folder\Searching\Searching\obj\Debug\Searching.csproj.AssemblyReference.cache
+D:\repo\CSharp Folder\Searching\Searching\obj\Debug\Searching.csproj.SuggestedBindingRedirects.cache
+D:\repo\CSharp Folder\Searching\Searching\obj\Debug\Searching.Form1.resources
+D:\repo\CSharp Folder\Searching\Searching\obj\Debug\Searching.Properties.Resources.resources
+D:\repo\CSharp Folder\Searching\Searching\obj\Debug\Searching.csproj.GenerateResource.cache
+D:\repo\CSharp Folder\Searching\Searching\obj\Debug\Searching.csproj.CoreCompileInputs.cache
+D:\repo\CSharp Folder\Searching\Searching\obj\Debug\Searching.exe
+D:\repo\CSharp Folder\Searching\Searching\obj\Debug\Searching.pdb
