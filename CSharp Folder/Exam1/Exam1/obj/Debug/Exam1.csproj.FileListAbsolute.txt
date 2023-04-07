@@ -1,0 +1,12 @@
+D:\repo\CSharp Folder\Exam1\Exam1\bin\Debug\Exam1.exe.config
+D:\repo\CSharp Folder\Exam1\Exam1\bin\Debug\Exam1.exe
+D:\repo\CSharp Folder\Exam1\Exam1\bin\Debug\Exam1.pdb
+D:\repo\CSharp Folder\Exam1\Exam1\obj\Debug\Exam1.csproj.AssemblyReference.cache
+D:\repo\CSharp Folder\Exam1\Exam1\obj\Debug\Exam1.csproj.SuggestedBindingRedirects.cache
+D:\repo\CSharp Folder\Exam1\Exam1\obj\Debug\Exam1.SplashScreen.resources
+D:\repo\CSharp Folder\Exam1\Exam1\obj\Debug\Exam1.Login.resources
+D:\repo\CSharp Folder\Exam1\Exam1\obj\Debug\Exam1.Properties.Resources.resources
+D:\repo\CSharp Folder\Exam1\Exam1\obj\Debug\Exam1.csproj.GenerateResource.cache
+D:\repo\CSharp Folder\Exam1\Exam1\obj\Debug\Exam1.csproj.CoreCompileInputs.cache
+D:\repo\CSharp Folder\Exam1\Exam1\obj\Debug\Exam1.exe
+D:\repo\CSharp Folder\Exam1\Exam1\obj\Debug\Exam1.pdb
