@@ -1,0 +1,13 @@
+D:\repo\CSharp Folder\NETExam1\NETExam1\obj\Debug\NETExam1.csproj.AssemblyReference.cache
+D:\repo\CSharp Folder\NETExam1\NETExam1\obj\Debug\NETExam1.csproj.SuggestedBindingRedirects.cache
+D:\repo\CSharp Folder\NETExam1\NETExam1\obj\Debug\Exam1.Login.resources
+D:\repo\CSharp Folder\NETExam1\NETExam1\obj\Debug\NETExam1.Properties.Resources.resources
+D:\repo\CSharp Folder\NETExam1\NETExam1\obj\Debug\NETExam1.SplashScreen.resources
+D:\repo\CSharp Folder\NETExam1\NETExam1\obj\Debug\NETExam1.csproj.GenerateResource.cache
+D:\repo\CSharp Folder\NETExam1\NETExam1\obj\Debug\NETExam1.csproj.CoreCompileInputs.cache
+D:\repo\CSharp Folder\NETExam1\NETExam1\bin\Debug\NETExam1.exe.config
+D:\repo\CSharp Folder\NETExam1\NETExam1\bin\Debug\NETExam1.exe
+D:\repo\CSharp Folder\NETExam1\NETExam1\bin\Debug\NETExam1.pdb
+D:\repo\CSharp Folder\NETExam1\NETExam1\obj\Debug\NETExam1.exe
+D:\repo\CSharp Folder\NETExam1\NETExam1\obj\Debug\NETExam1.pdb
+D:\repo\CSharp Folder\NETExam1\NETExam1\obj\Debug\NETExam1.Main.resources
